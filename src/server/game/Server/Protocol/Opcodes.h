@@ -574,7 +574,7 @@ enum Opcodes
     SMSG_MAIL_LIST_RESULT                            = 0x03C54, // (0xABD1)(0x023B) //
     CMSG_BATTLEFIELD_LIST                            = 0x04136, // (0x1F73)(0x023C) //
     SMSG_BATTLEFIELD_LIST                            = 0x03858, // (  nf  )(0x023D) //
-    CMSG_BATTLEFIELD_JOIN                            = 0x00137, // (  nf  )(0x023E) //
+    CMSG_BATTLEFIELD_JOIN                            = 0x00337, // (  nf  )(0x023E) //
     SMSG_BATTLEFIELD_WIN_OBSOLETE                    = 0x100AB, // (  nf  )(0x023F) //
     SMSG_BATTLEFIELD_LOSE_OBSOLETE                   = 0x100AC, // (  nf  )(0x0240) //
     CMSG_TAXICLEARNODE                               = 0x100AD, // (  nf  )(0x0241) //
@@ -720,10 +720,10 @@ enum Opcodes
     CMSG_MOVE_NOT_ACTIVE_MOVER                       = 0x100EC, // (  nf  )(0x02D1) //
     SMSG_PLAY_SOUND                                  = 0x0A47F, // (0xA2D1)(0x02D2) //
     CMSG_BATTLEFIELD_STATUS                          = 0x100ED, // (  nf  )(0x02D3) //
-    SMSG_BATTLEFIELD_STATUS                          = 0x100EE, // (  nf  )(0x02D4) //
+    SMSG_BATTLEFIELD_STATUS                          = 0x018B8, // (  nf  )(0x02D4) //
     CMSG_BATTLEFIELD_PORT                            = 0x100EF, // (0x1373)(0x02D5) //
     MSG_INSPECT_HONOR_STATS                          = 0x100F0, // (  nf  )(0x02D6) //
-    CMSG_BATTLEMASTER_HELLO                          = 0x100F1, // (  nf  )(0x02D7) //
+    CMSG_BATTLEMASTER_HELLO                          = 0x06D57, // (  nf  )(0x02D7) //
     CMSG_MOVE_START_SWIM_CHEAT                       = 0x100F2, // (  nf  )(0x02D8) //
     CMSG_MOVE_STOP_SWIM_CHEAT                        = 0x100F3, // (  nf  )(0x02D9) //
     SMSG_FORCE_WALK_SPEED_CHANGE                     = 0x100F4, // (  nf  )(0x02DA) //
@@ -746,7 +746,7 @@ enum Opcodes
     SMSG_BINDER_CONFIRM                              = 0x10101, // (0x4234)(0x02EB) //
     SMSG_BATTLEGROUND_PLAYER_JOINED                  = 0x10101, // (  nf  )(0x02EC) //
     SMSG_BATTLEGROUND_PLAYER_LEFT                    = 0x10102, // (  nf  )(0x02ED) //
-    CMSG_BATTLEMASTER_JOIN                           = 0x10103, // (0x8F73)(0x02EE) //
+    CMSG_BATTLEMASTER_JOIN                           = 0x00137, // (0x8F73)(0x02EE) //
     CMSG_BATTLEMASTER_JOIN_RATED                     = 0x10104, // (0x8363)(  nf  ) //
     SMSG_ADDON_INFO                                  = 0x0EE5D, // (0x0AF9)(0x02EF) //
     CMSG_PET_UNLEARN                                 = 0x10105, // (  nf  )(0x02F0) //
