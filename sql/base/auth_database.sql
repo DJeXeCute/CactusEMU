@@ -35,34 +35,6 @@ CREATE TABLE IF NOT EXISTS `account` (
   UNIQUE KEY `idx_username` (`username`)
 ) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Account System';
 
-# Dumping data for table auth.account: 6 rows
-/*!40000 ALTER TABLE `account` DISABLE KEYS */;
-INSERT INTO `account` (`id`, `username`, `sha_pass_hash`, `sessionkey`, `v`, `s`, `email`, `joindate`, `last_ip`, `failed_logins`, `locked`, `last_login`, `online`, `expansion`, `mutetime`, `locale`, `recruiter`) VALUES
-	(1, 'ADMINISTRATOR', 'A34B29541B87B7E4823683CE6C7BF6AE68BEAAAC', '573EF0FE02C46EC277EC5E6C6648C68ADD851C9C179E160EC81BEA2E70C8D3A8FE4BB6D209F61E46', '4CE24CBDB5B2E709DB65C3973B0D9A5ECBAF47299CE151A0DA68520AAB6C3F4E', '8B89CF327DE104BE4D9CDFE7C96BE8AECA0F5768695973C75CB79F5E39CEB84B', NULL, '2010-12-06 14:29:32', '127.0.0.1', 0, 0, '2010-12-06 14:33:07', 0, 3, 0, 0, 0),
-	(2, 'GAMEMASTER', '7841E21831D7C6BC0B57FBE7151EB82BD65EA1F9', NULL, NULL, NULL, NULL, '2010-12-06 14:29:46', '127.0.0.1', 0, 0, '0000-00-00 00:00:00', 0, 3, 0, 0, 0),
-	(3, 'DEVELOPER', '82FA3BF31780E4CAAAC18DB6BC2940EA7D37B2ED', NULL, NULL, NULL, NULL, '2010-12-06 14:29:58', '127.0.0.1', 0, 0, '0000-00-00 00:00:00', 0, 3, 0, 0, 0),
-	(4, 'MODERATOR', 'A7F5FBFF0B4EEC2D6B6E78E38E8312E64D700008', NULL, NULL, NULL, NULL, '2010-12-06 14:30:17', '127.0.0.1', 0, 0, '0000-00-00 00:00:00', 0, 3, 0, 0, 0),
-	(5, 'PLAYER', '3CE8A96D17C5AE88A30681024E86279F1A38C041', NULL, NULL, NULL, NULL, '2010-12-06 14:30:23', '127.0.0.1', 0, 0, '0000-00-00 00:00:00', 0, 3, 0, 0, 0);
-/*!40000 ALTER TABLE `account` ENABLE KEYS */;
-
-
-# Dumping structure for table auth.account_access
-DROP TABLE IF EXISTS `account_access`;
-CREATE TABLE IF NOT EXISTS `account_access` (
-  `id` int(11) unsigned NOT NULL,
-  `gmlevel` tinyint(3) unsigned NOT NULL,
-  `RealmID` int(11) NOT NULL DEFAULT '-1',
-  PRIMARY KEY (`id`,`RealmID`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
-
-# Dumping data for table auth.account_access: 0 rows
-/*!40000 ALTER TABLE `account_access` DISABLE KEYS */;
-INSERT INTO `account_access` (`id`, `gmlevel`, `RealmID`) VALUES
-	(1, 4, -1),
-	(2, 3, -1),
-	(3, 2, -1),
-	(4, 1, -1);
-/*!40000 ALTER TABLE `account_access` ENABLE KEYS */;
 
 
 # Dumping structure for table auth.account_banned
